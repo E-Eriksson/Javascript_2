@@ -1,0 +1,33 @@
+<script>
+  class Person {
+    constructor(school, name, age, favoriteFoods) {
+      this.school = school;
+      this.name = name;
+      this.age = age;
+      this.favoriteFoods = favoriteFoods;
+    }
+  }
+
+  class Dog {
+    constructor(breed, age, name) {
+      this.breed = breed;
+      this.age = age;
+      this.name = name;
+    }
+  }
+
+  const myPerson = new Person("Chas", "Emil Eriksson", 24, [
+    "hamburger",
+    "pizza",
+  ]);
+  console.log(myPerson.name);
+  myPerson.eyeColor = "blue";
+  console.log(myPerson.eyeColor);
+
+  const myDog1 = new Dog("Labrador", "Puppy", "Buster");
+  const myDog2 = new Dog("Labrador", "Adult", "Marley");
+
+  console.log(myDog1.name);
+</script>
+
+<p>Open the console in the browser to see the output of this script.</p>
